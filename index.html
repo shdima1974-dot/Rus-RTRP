@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русь RTRP | Криминальная Москва GTA 5</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /* Ставим твою картинку на фон. Справа персонаж, слева — плавное затемнение под текст */
+            background: linear-gradient(90deg, rgba(15, 15, 20, 0.95) 0%, rgba(15, 15, 20, 0.8) 40%, rgba(15, 15, 20, 0.2) 100%), 
+                        url('https://i.pinimg.com/736x/df/ed/0b/dfed0b9a504dfc5aa9f7d95ad06ddd13.jpg') no-repeat right center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Контейнер смещен влево, чтобы не перекрывать персонажа */
+        .container {
+            max-width: 600px;
+            margin-left: 10%;
+            padding: 40px;
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Плавное появление контента при загрузке */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Стильный неоновый логотип */
+        .logo-box {
+            display: inline-block;
+            background: rgba(255, 51, 102, 0.1);
+            padding: 5px 15px;
+            border-left: 4px solid #ff3366;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ff3366;
+            text-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 900;
+            line-height: 1.1;
+            background: linear-gradient(90deg, #ffffff, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ff3366;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 18px 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Кнопка под цвет заката */
+        .btn-play {
+            background: linear-gradient(90deg, #ff3366, #ff5e3a);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(255, 51, 102, 0.4);
+        }
+
+        .btn-play:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(255, 51, 102, 0.7);
+        }
+
+        .btn-discord {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-discord:hover {
+            background: #5865F2;
+            border-color: #5865F2;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(88, 101, 242, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-box">RTRP PROJECT</div>
+        <h1>Русь</h1>
+        <h2>Криминальная Москва</h2>
+        <p>Атмосфера столичных улиц, разборки криминальных авторитетов и продвинутые игровые системы. Начни свой путь с самых низов и возглавь этот город.</p>
+        <div class="btn-group">
+            <a href="#" class="btn btn-play">Начать играть</a>
+            <a href="#" class="btn btn-discord">Наш Discord</a>
+        </div>
+    </div>
+</body>
+</html>
